@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <!--主plc连接的数量-->
+  <PlcCount>1</PlcCount>
+  <PLCRefresh>0</PLCRefresh>
+  <!--车辆跑位位-->
+  <TraceOut>135</TraceOut>
+  <!--车厅可接收新指令位-->
+  <IsAvailHall>297</IsAvailHall>
+  <!--TV可接收新指令位-->
+  <IsAvailTV>360</IsAvailTV>
+  <!--EXCEL报表导出路径-->
+  <FilePath>F:\Parking_Report\</FilePath>
+  <setting>
+    <!--开始设定库区信息-->
+    <PLC ID="1">
+      <!--plc ip地址-->
+      <PlcIPAddress>10.3.36.100</PlcIPAddress>
+      <!--要读取的连接项,以分号截取的，最后一个不能有分号-->
+      <ConnectItem>
+        S7:[S7 connection_1]DB1001,INT0,50;
+        S7:[S7 connection_1]DB1001,INT100,1;
+        S7:[S7 connection_1]DB1002,INT0,50;
+        S7:[S7 connection_1]DB1002,INT100,1;
+        S7:[S7 connection_1]DB1003,B0,38;
+        S7:[S7 connection_1]DB1203,B0,24;
+        S7:[S7 connection_1]DB1005,B0,38;
+        S7:[S7 connection_1]DB1205,B0,24;
+        S7:[S7 connection_1]DB1023,B0,30;
+        S7:[S7 connection_1]DB1223,B0,24;
+        S7:[S7 connection_1]DB1025,B0,30;
+        S7:[S7 connection_1]DB1225,B0,24
+      </ConnectItem>      
+    </PLC>
+  </setting>
+</root>

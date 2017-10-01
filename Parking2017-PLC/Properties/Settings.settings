@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Parking2017_PLC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SystemModel" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Url" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://10.3.36.10:81/ExternalManager/PLC/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
